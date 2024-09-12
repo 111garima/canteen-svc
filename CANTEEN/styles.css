@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f4e1;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff9300;
+    padding: 20px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Main Content Section */
+main {
+    padding: 20px;
+}
+
+.snacks, .drinks {
+    margin-bottom: 30px;
+}
+
+.snacks h2, .drinks h2 {
+    color: #ff9300;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    text-align: center;
+    width: 20%;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product button {
+    background-color: #ff9300;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #2ba14b;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+.testimonial {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contact Section */
+footer {
+    background-color: #ff9300;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contact {
+    color: white;
+}
+
+.footer-logo img {
+    width: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cart Section */
+.cart {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f4e1;
+}
+
+.cart h2 {
+    color: #ff9300;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.total {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button.pay-now {
+    background-color: #2ba14b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button.pay-now:hover {
+    background-color: #1e823c;
+}
+/* Items Section */
+.items {
+    padding: 20px;
+}
+
+h2 {
+    color: #ff9300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item p {
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+button {
+    background-color: #2ba14b;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e823c;
+}
+
+/* Item Controls */
+.add-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-controls .minus-btn, .add-controls .plus-btn {
+    background-color: #2ba14b;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+.add-controls .item-count {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-controls .minus-btn.visible, .add-controls .plus-btn.visible {
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #1e823c;
+}
+
+button.clear-cart {
+    background-color: #ff3e3e; /* A red background to indicate clearing */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px; /* Add some space between Clear Cart and Pay Now */
+}
+
+button.clear-cart:hover {
+    background-color: #d63333; /* Darker red on hover */
+}
